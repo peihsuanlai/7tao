@@ -1,0 +1,27 @@
+.logo{
+  width: 53px;
+  height: 53px;
+  
+  @include pad{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.search-bar{
+  width: 284px;
+  @include lg{
+    width: 200px;
+  }
+  
+  @include pad{
+    width: 168px;
+  }
+}
+
+.member{
+  color: $primary;
+&:hover{
+  color: $success;
+}  
+}

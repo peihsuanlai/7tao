@@ -1,0 +1,81 @@
+.landing-banner img {
+  height: 575px;
+  @include pad {
+    height: 180px;
+  }
+}
+
+.landing-date {
+  hr {
+    transform: rotate(-67.5deg);
+    border-top: 2px solid;
+  }
+  .md-hr {
+    width: 2px;
+    background-color: $primary;
+    transform: rotate(22.5deg);
+  }
+  h4:first-child {
+    @include pad {
+      width: 32%;
+    }
+  }
+  h4:last-child {
+    @include pad {
+      width: 65%;
+    }
+  }
+}
+
+.landing-title a {
+  border-left: 4px solid $primary !important;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    border: none !important;
+    border-left: 4px solid $secondary !important;
+  }
+}
+
+.landing-table {
+  table-layout: fixed;
+  thead th:first-child,
+  tbody td:first-child {
+    width: 31.5%;
+    @include pad {
+      width: auto;
+    }
+  }
+  thead th:nth-child(2),
+  tbody td:nth-child(2) {
+    width: 28.5%;
+    @include pad {
+      width: auto;
+    }
+  }
+  thead th:nth-child(3),
+  tbody td:nth-child(3) {
+    width: 28.5%;
+    @include pad {
+      width: auto;
+    }
+  }
+  thead th:last-child,
+  tbody td:last-child {
+    width: 11.5%;
+    @include pad {
+      width: auto;
+    }
+  }
+
+  .btn {
+    font-family: "Noto Serif TC", serif;
+    &:hover{
+        color:$secondary;
+        background-color: $primary;
+    }
+  }
+  @include pad {
+    table-layout: auto;
+  }
+}

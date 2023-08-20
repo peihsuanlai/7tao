@@ -1,0 +1,45 @@
+input[type="radio"] {
+  // position: absolute;
+  // opacity: 0;
+  // cursor: pointer;
+  // height: 0;
+  // width: 0;
+  visibility: hidden;
+}
+
+.radio-mark {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  border: 1px solid $primary;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  background-color: $body-bg;
+}
+
+.payment {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.payment:hover .radio-mark {
+  background-color: $dark;
+}
+
+.payment input:checked ~ .radio-mark {
+  background-color: $secondary;
+}
+
+.payment-table {
+  table-layout: fixed;
+  tr {
+    height: auto;
+    @include pad {
+      height: 58px;
+    }
+  }
+}

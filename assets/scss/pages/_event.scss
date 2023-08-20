@@ -1,0 +1,8 @@
+.event a{
+    border-left: 4px solid $primary !important; 
+    &:hover{
+      background-color: $white;
+        color: $primary;
+        border: none !important; 
+    }
+}

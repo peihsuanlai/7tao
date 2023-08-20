@@ -1,0 +1,135 @@
+.banner {
+  img {
+    height: 518px;
+    @include pad {
+      height: 350px;
+    }
+  }
+  &-text {
+    width: 66%;
+  }
+}
+
+.category {
+  img {
+    height: 80px;
+    @include pad {
+      height: 40px;
+    }
+  }
+  h2 {
+    @include pad {
+      font-size: 16px !important;
+    }
+  }
+  p {
+    @include pad {
+      font-size: 24px !important;
+    }
+  }
+}
+
+.activity {
+  > img {
+    height: 255px;
+  }
+  .know-more {
+    z-index: 1;
+    &:hover::before {
+      content: "";
+      position: absolute;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      top: -5px;
+      left: -10px;
+      z-index: -1;
+      background-color: $secondary;
+    }
+  }
+  .sparkler {
+    width: 24px;
+  }
+}
+.modal {
+  .close-btn {
+    background: transparent;
+    border: none;
+  }
+  .modal-btn:hover {
+    color: $white !important;
+  }
+}
+
+.online img {
+  height: 316px;
+  object-position: center 30%;
+}
+
+.chatgpt a {
+  border-left: 4px solid $primary !important;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    border: none !important;
+    border-left: 4px solid $secondary !important;
+  }
+  // &:hover {
+  //   background-color: $primary;
+  //   color: $white;
+  //   border: none;
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     border: none;
+  //     width: 4px;
+  //     height: 100%;
+  //     left: 0;
+  //     top: 0;
+  //     background-color: $secondary;
+  //   }
+  // }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 4px;
+  //   height: 100%;
+  //   left: 0;
+  //   top: 0;
+  //   background-color: $primary;
+  // }
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+.swiper-slide {
+  letter-spacing: 3.2px;
+  width: auto;
+}
+
+.album-cards {
+  li {
+    &:nth-child(2n) {
+      transform: rotate(2deg);
+    }
+    &:nth-child(3) {
+      transform: rotate(-2deg);
+    }
+  }
+}
+
+.album img {
+  height: 274px;
+}
+
+.follow > div {
+  @include pad-2 {
+    border-right: none !important;
+  }
+}
+
+.subscribe .subscribe-btn:hover,
+.chatgpt .chatgpt-btn:hover {
+  color: $secondary;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活動付款</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container mt-5 mt-md-10 mb-5 mb-md-9">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <ol
+            class="d-flex justify-content-between list-unstyled position-relative process"
+          >
+            <li class="d-flex flex-column align-items-center font-serif">
+              <span
+                class="py-1 px-2 py-md-3 px-md-11 border border-1 border-primary bg-primary text-secondary mb-1 mb-md-2"
+                ><i class="icofont-verification-check"></i
+              ></span>
+              <span class="font-serif">訂單確認</span>
+            </li>
+            <li class="d-flex flex-column align-items-center font-serif">
+              <span
+                class="number py-1 px-2 py-md-3 px-md-11 border border-1 border-primary bg-primary text-secondary mb-1 mb-md-2"
+                >2</span
+              >
+              <span class="font-serif">結帳付款</span>
+            </li>
+            <li class="d-flex flex-column align-items-center font-serif">
+              <span
+                class="number py-1 px-2 py-md-3 px-md-11 border border-1 border-primary text-primary mb-1 mb-md-2"
+                >3</span
+              >
+              <span class="font-serif">訂購結果</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mb-5 mb-md-6">
+      <h2 class="fs-4 fs-md-3 font-serif text-md-center mb-5 mb-md-4">
+        返老還童-制服聯誼
+      </h2>
+      <p
+        class="d-inline-block fs-10 fs-md-7 px-2 px-md-3 py-2 bg-primary text-secondary"
+      >
+        您的訂單已保留，請在2023/5/30 04:32
+        前完成繳費。若逾期未繳款，系統將取消您的訂單。
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <table class="table payment-table">
+            <tbody>
+              <tr class="border-top border-2 border-primary">
+                <th scope="row" class="font-serif align-middle">訂單編號</th>
+                <td class="text-end align-middle">892746123</td>
+              </tr>
+              <tr class="border-top border-bottom border-1 border-primary">
+                <th scope="row" class="font-serif align-middle">票券</th>
+                <td class="text-end align-middle">改頭換面票（含大改造）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="text-center checkout mb-4">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/sparkler.png"
+        alt="sparkler"
+        class="sparkler"
+      />
+    </div>
+
+    <div class="container mb-9 mb-md-10">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h3 class="fs-5 font-serif text-center mb-4">結帳資訊</h3>
+          <form action="#" class="checkout-form">
+            <div class="mb-4">
+              <label for="getTicket" class="mb-2">取票資訊</label><br />
+              <input
+                type="text"
+                id="getTicket"
+                placeholder="請輸入身分證字號或護照號碼"
+                class="px-4 py-2 fs-9 border border-2 border-primary bg-body rounded-0 w-100 d-block mb-1"
+              />
+              <span
+                >請輸入您的<span class="text-info">身分證字號</span>
+                供取票使用，外籍人士請輸入
+                <span class="text-info">護照號碼</span></span
+              >
+            </div>
+
+            <div class="mb-5 mb-md-6">
+              <p class="mb-2">付款方式</p>
+              <label for="credit-card" class="position-relative payment">
+                <input
+                  type="radio"
+                  id="credit-card"
+                  class="me-2"
+                  name="payment-method"
+                  value="credit-card"
+                />
+                信用卡
+                <span class="radio-mark"></span>
+              </label>
+              <br />
+              <label for="atm" class="position-relative payment">
+                <input
+                  type="radio"
+                  id="atm"
+                  class="me-2"
+                  name="payment-method"
+                  value="atm"
+                />ATM虛擬帳號
+                <span class="radio-mark"></span>
+                </label
+              >
+            </div>
+            <a href="./order.html"
+              type="button"
+              class="d-block mx-auto checkout-btn btn btn-primary py-4 rounded-0 border-0 fw-bold fs-9 mb-4"
+            >
+              確認訂單並繳費 $8000<span
+                class="material-icons-round align-bottom"
+              >
+                keyboard_double_arrow_right
+              </span>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

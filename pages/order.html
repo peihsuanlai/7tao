@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動訂購成功</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/logo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <%- include('./layout/header'); -%>
+
+    <div class="container mt-5 mt-md-10 mb-6 mb-md-9">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <ol
+              class="d-flex justify-content-between list-unstyled position-relative process"
+            >
+              <li class="d-flex flex-column align-items-center font-serif">
+                <span
+                  class="py-1 px-2 py-md-3 px-md-11 border border-1 border-primary bg-primary text-secondary mb-1 mb-md-2"
+                  ><i class="icofont-verification-check"></i
+                ></span>
+                <span class="font-serif">訂單確認</span>
+              </li>
+              <li class="d-flex flex-column align-items-center font-serif">
+                <span
+                  class="number py-1 px-2 py-md-3 px-md-11 border border-1 border-primary bg-primary text-secondary mb-1 mb-md-2"
+                  ><i class="icofont-verification-check"></i
+                    ></span
+                >
+                <span class="font-serif">結帳付款</span>
+              </li>
+              <li class="d-flex flex-column align-items-center font-serif">
+                <span
+                  class="number py-1 px-2 py-md-3 px-md-11 border border-1 border-primary text-primary mb-1 mb-md-2"
+                  >3</span
+                >
+                <span class="font-serif">訂購結果</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container order">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <span class="material-icons fs-4 fs-md-3 text-center d-block mb-4 mb-md-2">
+                check_circle_outline
+                </span>
+            <h2 class="fs-5 fs-md-4 font-serif text-center mb-6">
+               訂購成功
+              </h2>
+            <table class="table mb-4">
+              <tbody>
+                <tr class="border-top border-2 border-primary">
+                  <th scope="row" class="font-serif">訂單編號</th>
+                  <td class="text-end">892746123</td>
+                </tr>
+                <tr class="border-top border-bottom border-1 border-primary">
+                  <th scope="row" class="font-serif">訂購時間</th>
+                  <td class="text-end">2023/04/28 14:30</td>
+                </tr>
+                <tr class="border-top border-bottom border-1 border-primary">
+                  <th scope="row" class="font-serif">票券</th>
+                  <td class="text-end">改頭換面票（含大改造）$8000</td>
+                </tr>
+                <tr class="border-top border-bottom border-1 border-primary">
+                    <th scope="row" class="font-serif">取票序號</th>
+                    <td class="text-end text-info fw-bold">95G54J4434</td>
+                  </tr>
+                  <tr class="border-bottom border-1 border-primary">
+                    <th scope="row" class="font-serif">取票號碼</th>
+                    <td class="text-end text-info fw-bold">04597101</td>
+                  </tr>
+              </tbody>
+            </table>
+            <p>請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br>
+                若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>
+                若需退票，請按照退票辦法進行申請。</p>
+          </div>
+        </div>
+      </div>
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

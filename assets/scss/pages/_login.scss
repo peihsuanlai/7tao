@@ -1,0 +1,9 @@
+.login {
+    min-height: 75vh;
+    .sparkler{
+        width: 32px;
+    }
+    button:hover{
+        color: $secondary;
+    }
+}
