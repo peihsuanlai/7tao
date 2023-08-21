@@ -1,67 +1,48 @@
-// .process .line{
-//     width: 254px;
-//     height: 1px;
-//     background-color: $primary;
-//     @include pad{
-//         width: 132px;
-//     }
-// }
-
-
-.process{
-    &::before {
-        content: "";
-        width: 83%;
-        height: 1px;
-        background-color: black;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 30%;
-        position: absolute;
-        z-index: -1;
-      }
-      .number{
-        background-color: $body-bg;
-      }
+.process {
+  &::before {
+    content: "";
+    width: 83%;
+    height: 1px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    position: absolute;
+    z-index: -1;
+  }
+  .number {
+    background-color: $body-bg;
+  }
 }
 
-.checkout .sparkler{
-    width: 32px;
+.checkout .sparkler {
+  width: 32px;
 }
 
-input::placeholder{
-    background-color: transparent;
+.checkout-btn {
+  width: 80%;
+  &:hover {
+    color: $secondary;
+  }
+  @include pad {
+    width: 100%;
+  }
 }
 
-.checkout-btn{
-    width: 80%;
-    &:hover{
-        color: $secondary;
-    }
-    @include pad {
-        width: 100%;
-      }
+.cancel-btn {
+  color: #4f4f4f;
+  &:hover {
+    background-color: $white;
+  }
 }
 
-.cancel-btn{
-    color: #4F4F4F;
-    &:hover{
-        background-color: $white;
-    }
+.checkout-form {
+  .form-control {
+    border: 2px solid $primary;
+  }
 
+  .was-validated .form-control:invalid,
+  .was-validated .form-control:invalid:focus {
+    border-color: $info;
+  }
 }
-
-.checkout-form input{
-   outline: none;
-//    &:active, &:focus{
-//     background-color: $white;
-//     color:$primary;
-//    }
-}
-
-
-
-
-
- 
- 

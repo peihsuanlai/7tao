@@ -1,9 +1,18 @@
 .login {
-    min-height: 75vh;
-    .sparkler{
-        width: 32px;
-    }
-    button:hover{
-        color: $secondary;
-    }
+  min-height: 75vh;
+  .sparkler {
+    width: 32px;
+  }
+  button:hover {
+    color: $secondary;
+  }
+
+  .form-control {
+    border: 2px solid $primary;
+  }
+
+  .was-validated .form-control:invalid,
+  .was-validated .form-control:invalid:focus {
+    border-color: $info;
+  }
 }

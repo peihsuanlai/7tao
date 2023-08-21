@@ -17,17 +17,11 @@
       height: 40px;
     }
   }
-  h2 {
-    @include pad {
-      font-size: 16px !important;
-    }
-  }
-  p {
-    @include pad {
-      font-size: 24px !important;
-    }
+  .explore:hover{
+    color: $white;
   }
 }
+
 
 .activity {
   > img {
@@ -74,30 +68,6 @@
     border: none !important;
     border-left: 4px solid $secondary !important;
   }
-  // &:hover {
-  //   background-color: $primary;
-  //   color: $white;
-  //   border: none;
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     border: none;
-  //     width: 4px;
-  //     height: 100%;
-  //     left: 0;
-  //     top: 0;
-  //     background-color: $secondary;
-  //   }
-  // }
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 4px;
-  //   height: 100%;
-  //   left: 0;
-  //   top: 0;
-  //   background-color: $primary;
-  // }
 }
 
 .swiper-wrapper {
