@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>登入7TAO會員</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/logo.png" type="image/x-icon">
-  <script type="module" crossorigin src="/7tao/assets/main-b8ffd7aa.js"></script>
-  <link rel="stylesheet" href="/7tao/assets/main-7b7e9678.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/logo.png"
+      type="image/x-icon"
+    />
+    <script type="module" crossorigin src="/7tao/assets/main-76092ddc.js"></script>
+    <link rel="stylesheet" href="/7tao/assets/main-77c50a5a.css">
+  </head>
+  <body>
     <header class="container">
   <nav class="navbar navbar-expand-lg">
     <div class="container px-0">
@@ -91,57 +95,67 @@
   />
 </div>
 
-
-  
-      <div class="container login mt-5 mt-md-10">
-        <div class="row">
-          <div class="col-md-4 mx-auto">
-            <img
+    <div class="container login mt-5 mt-md-10">
+      <div class="row">
+        <div class="col-md-6 col-xl-4 mx-auto">
+          <img
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/sparkler.png"
             alt="sparkler"
             class="sparkler mx-auto d-block mb-4"
           />
-            <h3 class="fs-5 font-serif text-center mb-4">會員登入</h3>
-            <form action="#" class="checkout-form">
-              <div class="mb-4">
-                <label for="account" class="mb-2">帳戶</label><br />
-                <input
-                  type="text"
-                  id="account"
-                  placeholder="請輸入帳號"
-                  class="px-4 py-2 fs-9 border border-2 border-primary bg-body rounded-0 w-100"
-                />
-              </div>
-              <div class="mb-5 mb-md-6">
-                <label for="password" class="mb-2">密碼</label><br />
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="請輸入密碼"
-                  class="px-4 py-2 fs-9 border border-2 border-primary bg-body rounded-0 w-100"
-                />
-              </div>
-            
-              <button
-                type="button"
-                class="d-block mx-auto btn btn-primary py-4 rounded-0 border-0 fw-bold fs-9 mb-4 w-100"
+          <h3 class="fs-5 font-serif text-center mb-4">會員登入</h3>
+          <form action="#" class="checkout-form needs-validation" novalidate>
+            <div class="mb-4">
+              <label for="account" class="mb-2 form-label">帳戶</label><br />
+              <input
+                type="text"
+                id="account"
+                placeholder="請輸入帳號"
+                class="form-control px-4 py-2 fs-9 bg-body rounded-0 w-100"
+                required
+              />
+              <span class="invalid-feedback fs-10 fs-md-7 text-info fw-bold"
+                >請輸入帳號</span
               >
-                登入<span class="material-icons-round align-bottom">
-                  keyboard_double_arrow_right
-                </span>
-              </button>
-              
-            </form>
-          </div>
+            </div>
+            <div class="mb-5 mb-md-6">
+              <label for="password" class="mb-2 form-label">密碼</label><br />
+              <input
+                type="password"
+                id="password"
+                placeholder="請輸入密碼"
+                class="form-control px-4 py-2 fs-9 bg-body rounded-0 w-100"
+                required
+              />
+              <span class="invalid-feedback fs-10 fs-md-7 text-info fw-bold"
+                >請輸入密碼</span
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="d-block mx-auto btn btn-primary py-4 rounded-0 border-0 fw-bold fs-9 mb-4 w-100"
+            >
+              登入<span class="material-icons-round align-bottom">
+                keyboard_double_arrow_right
+              </span>
+            </button>
+          </form>
         </div>
       </div>
-
-
-
-
-
-
+    </div>
     <footer class="text-center fs-10 fs-md-7 py-5 py-md-6 border-top border-primary border-3">© 7TAO七逃. All Rights Reserved</footer>
     
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+          $(document).ready(function(){
+        $('.needs-validation').each(function(index) {
+        $(this).on('submit', function(e) {
+          e.preventDefault();
+          $(this).addClass('was-validated');
+        });
+      });
+    })
+    </script>
   </body>
 </html>

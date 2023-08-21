@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>活動結帳</title>
     <link rel="icon" href="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/logo.png" type="image/x-icon">
-    <script type="module" crossorigin src="/7tao/assets/main-b8ffd7aa.js"></script>
-    <link rel="stylesheet" href="/7tao/assets/main-7b7e9678.css">
+    <script type="module" crossorigin src="/7tao/assets/main-76092ddc.js"></script>
+    <link rel="stylesheet" href="/7tao/assets/main-77c50a5a.css">
   </head>
   <body>
     <header class="container">
@@ -93,7 +93,7 @@
 
     <div class="container mt-5 mt-md-10 mb-5 mb-md-9">
       <div class="row">
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-8 col-lg-6 mx-auto">
           <ol
             class="d-flex justify-content-between list-unstyled position-relative process"
           >
@@ -125,7 +125,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-8 col-lg-6 mx-auto">
           <h2 class="fs-4 fs-md-3 font-serif text-md-center mb-5 mb-md-6">
             返老還童-制服聯誼
           </h2>
@@ -158,47 +158,56 @@
 
     <div class="container mb-9 mb-md-10">
       <div class="row">
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-8 col-lg-6 mx-auto">
           <h3 class="fs-5 font-serif text-center mb-4">聯絡人資料</h3>
-          <form action="#" class="checkout-form">
+          <form action="#" class="checkout-form needs-validation" novalidate>
             <div class="mb-4">
-              <label for="name" class="mb-2">聯絡人姓名</label><br />
+              <label for="name" class="mb-2 form-label">聯絡人姓名</label><br />
               <input
                 type="text"
                 id="name"
                 placeholder="請輸入聯絡人名稱"
-                class="px-4 py-2 fs-9 border border-2 border-primary bg-body rounded-0 w-100"
-              />
+                class="px-4 py-2 fs-9 bg-body rounded-0 w-100 form-control"
+                required />
+                <span class="invalid-feedback fs-10 fs-md-7 text-info fw-bold"
+                >請輸入姓名</span
+              >
             </div>
             <div class="mb-4">
-              <label for="email" class="mb-2">Email</label><br />
+              <label for="email" class="mb-2 form-label">Email</label><br />
               <input
                 type="email"
                 id="email"
                 placeholder="請輸入Email"
-                class="px-4 py-2 fs-9 border border-2 border-primary bg-body rounded-0 w-100"
-              />
+                class="px-4 py-2 fs-9 rounded-0 w-100 form-control"
+                required />
+                <span class="invalid-feedback fs-10 fs-md-7 text-info fw-bold"
+                >請輸入正確Email格式</span
+              >
             </div>
             <div class="mb-5 mb-md-6">
-              <label for="phone" class="mb-2">手機</label><br />
+              <label for="phone" class="mb-2 form-label">手機</label><br />
               <input
                 type="text"
                 id="phone"
                 placeholder="請輸入手機號碼"
-                class="px-4 py-2 fs-9 border border-2 border-primary bg-body rounded-0 w-100"
-              />
+                class="px-4 py-2 fs-9 rounded-0 w-100 form-control"
+                required />
+                <span class="invalid-feedback fs-10 fs-md-7 text-info fw-bold"
+                >請輸入手機號碼</span
+              >
             </div>
             <a
-              type="button"
+              type="submit"
               href="./payment.html"
-              class="d-block mx-auto checkout-btn btn btn-primary py-4 rounded-0 border-0 fw-bold fs-9 mb-4"
+              class="d-block mx-auto checkout-btn btn btn-primary py-4 rounded-0 border-0 fw-bold fs-9 mb-4 form-control"
             >
-              確認表單資料<span class="material-icons-round align-bottom">
+              確認訂單<span class="material-icons-round align-bottom">
                 keyboard_double_arrow_right
               </span>
             </a>
             <button
-              type="button"
+              type="submit"
               class="cancel-btn btn py-2 px-2 rounded-0 border-0 fs-6 text-gray d-block mx-auto"
             >
               取消購票
@@ -208,7 +217,17 @@
       </div>
     </div>
 
-    <footer class="text-center fs-10 fs-md-7 py-5 py-md-6 border-top border-primary border-3">© 7TAO七逃. All Rights Reserved</footer>
-    
+    <footer class="text-center fs-10 fs-md-7 py-5 py-md-6 border-top border-primary border-3">© 7TAO七逃. All Rights Reserved</footer>    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+          $(document).ready(function(){
+        $('.needs-validation').each(function(index) {
+        $(this).on('submit', function(e) {
+          e.preventDefault();
+          $(this).addClass('was-validated');
+        });
+      });
+    })
+    </script>
   </body>
 </html>
