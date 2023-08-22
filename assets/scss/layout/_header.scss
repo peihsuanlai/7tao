@@ -1,27 +1,24 @@
 .logo{
-  width: 53px;
-  height: 53px;
+  width: 40px;
+  height: 40px;
   
-  @include pad{
-    width: 40px;
-    height: 40px;
+  @include md{
+    width: 53px;
+    height: 53px;
   }
 }
 
 .search-bar{
-  width: 284px;
-  @include lg{
+  width: 168px;
+  @include md{
     width: 200px;
   }
   
-  @include pad{
-    width: 168px;
+  @include lg{
+    width: 284px;
   }
 }
 
-.member{
-  color: $primary;
-&:hover{
-  color: $success;
+.member:hover{
+  color: $success !important;
 }  
-}

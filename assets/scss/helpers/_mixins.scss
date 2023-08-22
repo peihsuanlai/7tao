@@ -1,19 +1,11 @@
+@mixin md{
+  @media(min-width: 768px){
+    @content;
+}
+}
 
-
-
-@mixin pad{
-    @media(max-width: 768px){
-        @content;
-    }
-  }
-  @mixin lg{
-    @media(max-width: 992px){
-        @content;
-    }
-  }
-
-@mixin pad-2{
-    @media(min-width: 768px){
-        @content;
-    }
-  }
+@mixin lg{
+   @media(min-width: 992px){
+    @content;
+}
+}

@@ -586,14 +586,14 @@ $font-sizes: (
   1: $font-size-base * 4,  //64px
   2: $font-size-base * 3.75, //60px
   3: $font-size-base * 3,  //48px
-  4: $font-size-base * 2,  //32px
-  5: $font-size-base * 1.5,  //24px
-  6: $font-size-base * 1.125,  // 18px
-  7: $font-size-base , // 16px
-  8: $font-size-base * 1.375, // 22px
-  9: $font-size-base * 1.25,// 20px
-  10: $font-size-base * 0.875,// 14px
-  11: $font-size-base * 2.5 //40px
+  4: $font-size-base * 2.5, //40px
+  5: $font-size-base * 2,  //32px
+  6: $font-size-base * 1.5,  //24px
+  7: $font-size-base * 1.375, // 22px
+  8: $font-size-base * 1.25,// 20px
+  9:  $font-size-base * 1.125,  // 18px
+  10: $font-size-base , // 16px
+  11: $font-size-base * 0.875// 14px
 ) !default; 
 // scss-docs-end font-sizes
 

@@ -1,30 +1,23 @@
-.landing-banner img {
-  height: 575px;
-  @include pad {
-    height: 180px;
-  }
-}
-
-.landing-date {
-  hr {
-    transform: rotate(-67.5deg);
-    border-top: 2px solid;
-  }
-  .md-hr {
-    width: 2px;
-    background-color: $primary;
-    transform: rotate(22.5deg);
-  }
-  h4:first-child {
-    @include pad {
-      width: 32%;
-    }
-  }
-  h4:last-child {
-    @include pad {
-      width: 65%;
-    }
-  }
+.landing-date::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  left: 45%;
+  // top: 50%;
+  // transform: translateX(-50%);
+  rotate: (120deg);
+  background-color: black;
+ @include md{
+  top: 50%;
+  left: 35%;
+  // transform: translate(-50%,-50%);
+ }
+ @include lg{
+  width: 100px;
+  left: 20%;
+  // transform: translateX(-50%);
+ }
 }
 
 .landing-title a {
@@ -38,44 +31,30 @@
 }
 
 .landing-table {
-  table-layout: fixed;
-  thead th:first-child,
+  .btn{
+    font-family: 'Noto Serif TC', serif;
+    &:hover{
+      color:$secondary;
+      background-color: $primary;
+  }
+  }
+  @include md{
+    table-layout: fixed;
+    thead th:first-child,
   tbody td:first-child {
     width: 31.5%;
-    @include pad {
-      width: auto;
-    }
   }
   thead th:nth-child(2),
   tbody td:nth-child(2) {
-    width: 28.5%;
-    @include pad {
-      width: auto;
-    }
+    width: 28.5%; 
   }
   thead th:nth-child(3),
   tbody td:nth-child(3) {
-    width: 28.5%;
-    @include pad {
-      width: auto;
-    }
+    width: 28.5%; 
   }
   thead th:last-child,
   tbody td:last-child {
     width: 11.5%;
-    @include pad {
-      width: auto;
-    }
   }
-
-  .btn {
-    font-family: "Noto Serif TC", serif;
-    &:hover{
-        color:$secondary;
-        background-color: $primary;
-    }
-  }
-  @include pad {
-    table-layout: auto;
   }
 }

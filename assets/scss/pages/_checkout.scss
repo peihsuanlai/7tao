@@ -20,12 +20,12 @@
 }
 
 .checkout-btn {
-  width: 80%;
+  width: 100%;
   &:hover {
     color: $secondary;
   }
-  @include pad {
-    width: 100%;
+  @include md {
+    width: 80%;
   }
 }
 

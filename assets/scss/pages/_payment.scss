@@ -1,9 +1,4 @@
 input[type="radio"] {
-  // position: absolute;
-  // opacity: 0;
-  // cursor: pointer;
-  // height: 0;
-  // width: 0;
   visibility: hidden;
 }
 
@@ -37,9 +32,9 @@ input[type="radio"] {
 .payment-table {
   table-layout: fixed;
   tr {
-    height: auto;
-    @include pad {
-      height: 58px;
+    height: 58;
+    @include md {
+      height: auto;
     }
   }
 }

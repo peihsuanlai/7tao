@@ -1,8 +1,8 @@
 .banner {
   img {
-    height: 518px;
-    @include pad {
-      height: 350px;
+    height: 350px;
+    @include md {
+      height: 518px;
     }
   }
   &-text {
@@ -12,9 +12,9 @@
 
 .category {
   img {
-    height: 80px;
-    @include pad {
-      height: 40px;
+    height: 40px;
+    @include md {
+      height: 80px;
     }
   }
   .explore:hover{
@@ -45,15 +45,11 @@
     width: 24px;
   }
 }
-.modal {
-  .close-btn {
-    background: transparent;
-    border: none;
-  }
-  .modal-btn:hover {
+
+.modal-btn:hover {
     color: $white !important;
   }
-}
+
 
 .online img {
   height: 316px;
@@ -94,7 +90,7 @@
 }
 
 .follow > div {
-  @include pad-2 {
+  @include md {
     border-right: none !important;
   }
 }
